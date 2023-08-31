@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS company_db;
-CREATE DATABASE company_db;
+DROP DATABASE IF EXISTS library_db;
+CREATE DATABASE library_db;
 
-USE company_db;
+USE library_db;
 
 CREATE TABLE department (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -20,6 +20,5 @@ CREATE TABLE employee (
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
     role_id INT NOT NULL,
-    manager_id INT,
-    -- manager BOOLEAN NOT NULL
+    managers_id INT, --Manager's employee_id
 );
