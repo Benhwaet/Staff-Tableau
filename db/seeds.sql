@@ -5,7 +5,7 @@ VALUES ("Regional"),
 ("Adult/YA"),
 ("Children's");
 
-INSERT INTO role (title, salary)
+INSERT INTO roles (title, salary)
 VALUES 
 ("Head of Department", 70,000),
 ("Library Assistant", 50,000),
