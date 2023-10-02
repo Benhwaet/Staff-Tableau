@@ -1,4 +1,17 @@
 {
+  "name": "staff-tableau",
+  "version": "1.0.0",
+  "description": "An employee tracker with roles, deparments, managers, and salaries",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benhwaet/Staff-Tableau"
+  },
+  "author": "Benhwaet",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
     "inquirer": "^8.2.4",
