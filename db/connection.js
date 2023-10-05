@@ -8,10 +8,14 @@ const db = mysql.createConnection(
         host: "localhost",
         user: "root",
         //add your sql server password here
-        password: "Mopipys#1914",
+        password: process.env.PASSWORD,
         database: "boring_db",
     },
-    console.log('Connected to database')
 );
+
+db.connect((err) => {
+    if (err) throw err;
+    console.log("Connected to database");
+});
 
 module.exports = db;
