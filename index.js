@@ -135,7 +135,7 @@ const updateEmployeeRole = () => {
             const { employee_id, role_id } = answer;
 
             try {
-                await db.query(queries.updateRole, [employee_id, role]);
+                await db.query(queries.updateRole, [employee_id, role_id]);
 
                 console.log(`Updated employee role.`)
 

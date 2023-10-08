@@ -8,6 +8,9 @@ This application is a command-line application that allows the user to view and 
 
 Please note that this project is not optimized and the Update Employee Role function does not work. The program will be updated in the future to fix these issues.
 
+Follow the following link to view a quick walkthrough of the project:
+<https://drive.google.com/file/d/1_u2Z7Q-gv21v_pMFSDy72k1dyKHhkvpR/view?usp=sharing>
+
 ## Table of Contents
 
 * [Installation](#installation)
