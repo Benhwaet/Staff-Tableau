@@ -8,7 +8,7 @@ const db = mysql.createConnection(
         host: "localhost",
         user: "root",
         //add your sql server password here
-        password: process.env.PASSWORD,
+        password: "Mopipys#1914",
         database: "boring_db",
     },
 );

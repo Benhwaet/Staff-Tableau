@@ -1,10 +1,12 @@
 # Staff-Tableau
 
-View and manage the departments, roles, and employees in a company
+View and manage the departments, roles, and employees in a company using MySQL queries in Nodejs, using the Inquirer package.
 
 ## Description
 
 This application is a command-line application that allows the user to view and manage the departments, roles, and employees in a company. The user can add departments, roles, and employees, view departments, roles, and employees, update employee roles, update an employee's manager, view employees by manager, view employees by department, delete a department, delete a role, delete an employee, and view the total utilized budget of a department.
+
+Please note that this project is not optimized and the Update Employee Role function does not work. The program will be updated in the future to fix these issues.
 
 ## Table of Contents
 
@@ -50,13 +52,7 @@ The user can choose to:
 * add a role,
 * add an employee,
 * update an employee's role,
-* update an employee's manager,
-* view employees by manager,
-* view employees by department,
-* delete a department,
-* delete a role,
 * delete an employee,
-* view the total utilized budget of a department,
 * or exit the program.
 
 The user can navigate through the program by using the arrow keys to select an option and pressing enter. The user can also exit the program at any time by selecting the "Exit" option from the main menu.
@@ -72,3 +68,9 @@ Have any questions for the author? Contact this author via [Email](mailto:benhwa
 ## Credits
 
 This project was created by Benhwaet in the course of a full-stack web development bootcamp at the University of New Brunswick given by [edX](https://www.edx.org). Instructions and project development details and requirements are found in the References folder README.md file.
+
+I consulted some of the following GitHub repositories for help with this project, as they were the most comprehensive examples provided when searching for use of SQL queries in JavaScript, using Nodejs and Inquirer:
+
+<https://github.com/viakeegan/sql-employee-tracker-12>
+<https://github.com/jpd61/employee-tracker>
+<https://github.com/xNoirNightx/Employee-Tracker-SQL>

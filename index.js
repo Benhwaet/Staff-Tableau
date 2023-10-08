@@ -4,20 +4,18 @@ const prompts = require('./prompts');
 const queries = require('./queries');
 const util = require('util');
 const db = require('./db/connection');
+const cTable = require('console.table');
 
 
 //turn database queries into a promise (from github.com/WilliamCrownover)
 
 db.query = util.promisify(db.query);
 
-const viewTable = (table) => {
-    console.table(table);
-};
 
 const viewAllDepartments = async () => {
     try {
-        const departmentTable = db.query(queries.allDepartments);
-        viewTable(departmentTable);
+        const departmentTable = await db.query(queries.allDepartments);
+        console.table(departmentTable);
         return mainMenu();
     } catch (err) {
         console.log(err);
@@ -60,8 +58,8 @@ const viewDepartmentMenu = async () => {
 
 const viewAllRoles = async () => {
     try {
-        const roleTable = db.query(queries.allRoles);
-        viewTable(roleTable);
+        const roleTable = await db.query(queries.allRoles);
+        console.table(roleTable);
         return mainMenu();
     } catch (err) {
         console.log(err);
@@ -104,8 +102,8 @@ const viewRoleMenu = async () => {
 
 const viewAllEmployees = async () => {
     try {
-        const employeeTable = db.query(queries.allEmployees);
-        viewTable(employeeTable);
+        const employeeTable = await db.query(queries.allEmployees);
+        console.table(employeeTable);
         return mainMenu();
     } catch (err) {
         console.log(err);
@@ -174,7 +172,7 @@ const viewEmployeeMenu = async () => {
                     return addEmployee();
 
                 case "Delete an employee":
-                    
+                    return deleteEmployee();   
 
                 case "Update an employee's role":
                     return updateEmployeeRole();
@@ -201,8 +199,7 @@ const mainMenu = () => {
                     viewEmployeeMenu();
                     break;
                 case "Exit Application":
-                    db.end();
-                    break;
+                    process.exit(0);
             }
         })
 };

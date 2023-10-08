@@ -21,7 +21,6 @@ const prompts = {
             choices: [
                 "View all departments",
                 "Add a department",
-                "Exit"
             ]
         }
     ],
@@ -62,7 +61,6 @@ const prompts = {
             choices: [
                 "View all roles",
                 "Add a role",
-                "Exit"
             ]
         }
     ],
@@ -126,8 +124,7 @@ const prompts = {
                 "View all employees",
                 "Add an employee",
                 "Delete an employee",
-                "Update an employee's role",
-                "Exit"
+                "Update an employee's role"
             ]
         }
     ],
